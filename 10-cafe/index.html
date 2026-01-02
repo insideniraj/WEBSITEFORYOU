@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Himalayan Brew - Artisan Coffee & Cozy Vibes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>The Himalayan Brew</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#reservation" class="btn btn-primary">Reserve Table</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to</span>
+                <h1>The Himalayan <span>Brew</span></h1>
+                <p>Where every cup tells a story. Experience artisan coffee crafted with passion, paired with delicious treats in the heart of Kathmandu.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Premium Beans</h3>
+                    <p>Locally sourced from Nepal's finest coffee farms</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Fresh Baked</h3>
+                    <p>Pastries and treats baked fresh every morning</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Free WiFi</h3>
+                    <p>High-speed internet for work and leisure</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-couch"></i>
+                    <h3>Cozy Space</h3>
+                    <p>Comfortable seating for individuals and groups</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="Coffee Shop Interior">
+                <div class="about-badge">
+                    <span class="number">5+</span>
+                    <span class="text">Years of Coffee Excellence</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Our Story</span>
+                <h2>Brewing Happiness Since 2019</h2>
+                <p>The Himalayan Brew was born from a simple dream – to create a space where coffee lovers could escape the chaos of the city and enjoy a perfect cup of coffee.</p>
+                <p>We source our beans directly from local farmers in Gulmi, Syangja, and Kavre, ensuring fair prices for farmers and the freshest beans for our customers. Every cup is crafted with care by our trained baristas who share our passion for coffee.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>100% Nepali Coffee</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Trained Baristas</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Vegan Options</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check"></i>
+                        <span>Pet Friendly</span>
+                    </div>
+                </div>
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Menu</span>
+                <h2>Crafted with Love</h2>
+                <p>From signature espresso drinks to homemade pastries</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="coffee">Coffee</button>
+                <button class="tab-btn" data-tab="tea">Tea</button>
+                <button class="tab-btn" data-tab="food">Food</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+            </div>
+            <div class="menu-content">
+                <!-- Coffee Menu -->
+                <div class="menu-grid active" id="coffee">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300" alt="Espresso">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Classic Espresso</h3>
+                                <span class="price">Rs. 150</span>
+                            </div>
+                            <p>Rich, bold single shot of pure coffee essence</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300" alt="Cappuccino">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Cappuccino</h3>
+                                <span class="price">Rs. 220</span>
+                            </div>
+                            <p>Espresso with steamed milk and velvety foam</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=300" alt="Latte">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Café Latte</h3>
+                                <span class="price">Rs. 250</span>
+                            </div>
+                            <p>Smooth espresso with creamy steamed milk</p>
+                        </div>
+                    </div>
+                    <div class="menu-item featured">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=300" alt="Himalayan Special">
+                            <span class="featured-badge">Signature</span>
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Himalayan Special</h3>
+                                <span class="price">Rs. 320</span>
+                            </div>
+                            <p>Our signature blend with honey and cinnamon</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=300" alt="Mocha">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Café Mocha</h3>
+                                <span class="price">Rs. 280</span>
+                            </div>
+                            <p>Espresso with chocolate and steamed milk</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300" alt="Cold Brew">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Cold Brew</h3>
+                                <span class="price">Rs. 280</span>
+                            </div>
+                            <p>Slow-steeped for 18 hours, smooth and refreshing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tea Menu -->
+                <div class="menu-grid" id="tea">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300" alt="Masala Tea">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Masala Chiya</h3>
+                                <span class="price">Rs. 80</span>
+                            </div>
+                            <p>Traditional Nepali spiced tea</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=300" alt="Green Tea">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Ilam Green Tea</h3>
+                                <span class="price">Rs. 120</span>
+                            </div>
+                            <p>Premium green tea from Ilam hills</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=300" alt="Matcha">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Matcha Latte</h3>
+                                <span class="price">Rs. 280</span>
+                            </div>
+                            <p>Ceremonial grade matcha with steamed milk</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=300" alt="Herbal Tea">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Himalayan Herbal</h3>
+                                <span class="price">Rs. 150</span>
+                            </div>
+                            <p>Blend of local herbs and flowers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Food Menu -->
+                <div class="menu-grid" id="food">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300" alt="Sandwich">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Club Sandwich</h3>
+                                <span class="price">Rs. 350</span>
+                            </div>
+                            <p>Triple-decker with chicken, bacon, and veggies</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=300" alt="Pancakes">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Fluffy Pancakes</h3>
+                                <span class="price">Rs. 320</span>
+                            </div>
+                            <p>Stack of 3 with maple syrup and berries</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1482049016gy-2d3d8ab93f17?w=300" alt="Avocado Toast">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Avocado Toast</h3>
+                                <span class="price">Rs. 380</span>
+                            </div>
+                            <p>Sourdough with smashed avocado and poached egg</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300" alt="Salad">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Garden Salad</h3>
+                                <span class="price">Rs. 280</span>
+                            </div>
+                            <p>Fresh greens with house dressing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts Menu -->
+                <div class="menu-grid" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300" alt="Chocolate Cake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Chocolate Cake</h3>
+                                <span class="price">Rs. 280</span>
+                            </div>
+                            <p>Rich, moist chocolate layer cake</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=300" alt="Cheesecake">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>New York Cheesecake</h3>
+                                <span class="price">Rs. 320</span>
+                            </div>
+                            <p>Creamy classic with berry compote</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300" alt="Brownie">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Fudge Brownie</h3>
+                                <span class="price">Rs. 200</span>
+                            </div>
+                            <p>Warm brownie with vanilla ice cream</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=300" alt="Croissant">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Butter Croissant</h3>
+                                <span class="price">Rs. 180</span>
+                            </div>
+                            <p>Flaky, buttery French pastry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Space</span>
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400" alt="Cafe Interior">
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400" alt="Coffee Making">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=400" alt="Seating Area">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400" alt="Coffee Beans">
+                </div>
+                <div class="gallery-item wide">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600" alt="Cafe Exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400" alt="Latte Art">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">What's Happening</span>
+                <h2>Events & Specials</h2>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Every</span>
+                        <span class="month">SAT</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Live Acoustic Music</h3>
+                        <p>Enjoy live performances by local artists every Saturday evening from 6 PM.</p>
+                        <span class="event-time"><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Every</span>
+                        <span class="month">SUN</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Sunday Brunch Special</h3>
+                        <p>All-you-can-eat brunch buffet with unlimited coffee for Rs. 999.</p>
+                        <span class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 2:00 PM</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">Happy</span>
+                        <span class="month">HOUR</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Happy Hour</h3>
+                        <p>Buy one get one free on all espresso drinks every weekday.</p>
+                        <span class="event-time"><i class="fas fa-clock"></i> 3:00 PM - 5:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <span class="section-subtitle">Book a Table</span>
+                    <h2>Make a Reservation</h2>
+                    <p>Reserve your spot for a perfect coffee experience. Whether it's a casual meetup or a business meeting, we've got you covered.</p>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Sun - Thu: 8 AM - 9 PM<br>Fri - Sat: 8 AM - 10 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+977-9841234567<br>+977-01-4567890</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Jhamsikhel, Lalitpur<br>Near Bakery Cafe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="guests" name="guests" required>
+                                <option value="">Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6+">6+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="occasion" name="occasion">
+                                <option value="">Occasion (Optional)</option>
+                                <option value="casual">Casual Visit</option>
+                                <option value="meeting">Business Meeting</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="date">Date</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="3" placeholder="Special Requests (Optional)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-subtitle">Find Us</span>
+                    <h2>Visit Our Cafe</h2>
+                    <p>We're located in the heart of Jhamsikhel, easily accessible and with ample parking nearby.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.456789!2d85.3150!3d27.6700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQwJzEyLjAiTiA4NcKwMTgnNTQuMCJF!5e0!3m2!1sen!2snp!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-mug-hot"></i>
+                        <span>The Himalayan Brew</span>
+                    </a>
+                    <p>Where every cup tells a story.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Himalayan Brew. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for your reservation. We'll send you a confirmation shortly.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

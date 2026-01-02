@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Eatery - Experience the Taste of the Himalayas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">Himalayan</span>
+                <span class="logo-sub">Eatery</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#reservation" class="btn btn-primary">Reserve Table</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to</span>
+                <h1>Himalayan Eatery</h1>
+                <p>Experience the authentic taste of Nepal with our traditional recipes passed down through generations. Every dish tells a story of the majestic Himalayas.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#reservation" class="btn btn-secondary">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Restaurant Interior">
+                <div class="experience-badge">
+                    <span class="number">15+</span>
+                    <span class="text">Years of Excellence</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Our Story</span>
+                <h2>A Culinary Journey Through Nepal</h2>
+                <p>Founded in 2009, Himalayan Eatery has been serving authentic Nepali cuisine in the heart of Kathmandu. Our recipes have been passed down through generations, preserving the rich culinary heritage of Nepal.</p>
+                <p>We source our ingredients from local farmers and use traditional cooking methods to bring you the most authentic flavors. Every dish is prepared with love and served with warmth.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-utensils"></i>
+                        <span>Traditional Recipes</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <span>Made with Love</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2>Our Specialties</h2>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Wood Fire Cooking</h3>
+                    <p>Traditional clay oven cooking for authentic smoky flavors</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Organic Produce</h3>
+                    <p>Fresh vegetables and herbs from local organic farms</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized as one of the best Nepali restaurants</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Chefs</h3>
+                    <p>Skilled chefs with decades of culinary experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Discover</span>
+                <h2>Our Menu</h2>
+                <p>Explore our carefully curated selection of authentic Nepali dishes</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="appetizers">Appetizers</button>
+                <button class="tab-btn" data-tab="mains">Main Course</button>
+                <button class="tab-btn" data-tab="momos">Momos</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="drinks">Drinks</button>
+            </div>
+            <div class="menu-content">
+                <!-- Appetizers -->
+                <div class="menu-category active" id="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=300" alt="Samosa">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Vegetable Samosa</h3>
+                                    <span class="price">Rs. 150</span>
+                                </div>
+                                <p>Crispy pastry filled with spiced potatoes and peas</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=300" alt="Pakora">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Mixed Pakora</h3>
+                                    <span class="price">Rs. 180</span>
+                                </div>
+                                <p>Assorted vegetables in spiced chickpea batter</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=300" alt="Chatpate">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Chatpate</h3>
+                                    <span class="price">Rs. 120</span>
+                                </div>
+                                <p>Spicy puffed rice mix with tangy flavors</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=300" alt="Aloo Chop">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Aloo Chop</h3>
+                                    <span class="price">Rs. 100</span>
+                                </div>
+                                <p>Spiced potato cutlets, crispy fried to perfection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Course -->
+                <div class="menu-category" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300" alt="Dal Bhat">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Dal Bhat Set</h3>
+                                    <span class="price">Rs. 350</span>
+                                </div>
+                                <p>Traditional Nepali meal with rice, lentils, vegetables, and pickle</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=300" alt="Chicken Curry">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Nepali Chicken Curry</h3>
+                                    <span class="price">Rs. 450</span>
+                                </div>
+                                <p>Tender chicken in aromatic Nepali spices</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1574653853027-5382a3d23a15?w=300" alt="Mutton">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Khasi Ko Masu</h3>
+                                    <span class="price">Rs. 550</span>
+                                </div>
+                                <p>Slow-cooked mutton in traditional Nepali style</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=300" alt="Thakali">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Thakali Thali</h3>
+                                    <span class="price">Rs. 500</span>
+                                </div>
+                                <p>Complete Thakali meal with all accompaniments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Momos -->
+                <div class="menu-category" id="momos">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300" alt="Chicken Momo">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Chicken Momo (Steam)</h3>
+                                    <span class="price">Rs. 250</span>
+                                </div>
+                                <p>Juicy chicken dumplings with special dipping sauce</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=300" alt="Buff Momo">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Buff Momo (Fried)</h3>
+                                    <span class="price">Rs. 280</span>
+                                </div>
+                                <p>Crispy fried buffalo meat dumplings</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=300" alt="Veg Momo">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Vegetable Momo</h3>
+                                    <span class="price">Rs. 200</span>
+                                </div>
+                                <p>Fresh vegetables wrapped in delicate dough</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300" alt="Jhol Momo">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Jhol Momo</h3>
+                                    <span class="price">Rs. 300</span>
+                                </div>
+                                <p>Momos served in spicy sesame soup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300" alt="Kheer">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Rice Kheer</h3>
+                                    <span class="price">Rs. 150</span>
+                                </div>
+                                <p>Creamy rice pudding with cardamom and nuts</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=300" alt="Jalebi">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Jalebi</h3>
+                                    <span class="price">Rs. 120</span>
+                                </div>
+                                <p>Crispy sweet spirals soaked in sugar syrup</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300" alt="Sikarni">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Sikarni</h3>
+                                    <span class="price">Rs. 180</span>
+                                </div>
+                                <p>Sweet yogurt dessert with dried fruits</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Drinks -->
+                <div class="menu-category" id="drinks">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300" alt="Masala Tea">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Masala Chiya</h3>
+                                    <span class="price">Rs. 80</span>
+                                </div>
+                                <p>Traditional spiced Nepali tea</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=300" alt="Lassi">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Mango Lassi</h3>
+                                    <span class="price">Rs. 150</span>
+                                </div>
+                                <p>Refreshing yogurt drink with mango</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300" alt="Fresh Juice">
+                            </div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3>Fresh Fruit Juice</h3>
+                                    <span class="price">Rs. 180</span>
+                                </div>
+                                <p>Seasonal fresh fruit juice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Feast</span>
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400" alt="Momo">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400" alt="Dal Bhat">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" alt="Dining">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Chef">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400" alt="Tea">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation-wrapper">
+                <div class="reservation-info">
+                    <span class="section-subtitle">Book a Table</span>
+                    <h2>Make a Reservation</h2>
+                    <p>Reserve your table and enjoy an unforgettable dining experience with authentic Nepali cuisine.</p>
+                    <div class="reservation-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Sun - Fri: 11:00 AM - 10:00 PM<br>Saturday: 12:00 PM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+977-01-4567890<br>+977-9812345678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="guests" name="guests" required>
+                                <option value="">Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="3" placeholder="Special Requests (Optional)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Book Table</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2>Contact Us</h2>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Thamel, Kathmandu<br>Near Garden of Dreams</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+977-01-4567890</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@himalayaneatery.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456789!2d85.3100!3d27.7150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzU0LjAiTiA4NcKwMTgnMzYuMCJF!5e0!3m2!1sen!2snp!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">Himalayan</span>
+                        <span class="logo-sub">Eatery</span>
+                    </a>
+                    <p>Experience the authentic taste of Nepal</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Himalayan Eatery. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Reservation Confirmed!</h3>
+            <p>Thank you for your reservation. We will contact you shortly to confirm your booking.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Gallery Image" id="lightboxImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
